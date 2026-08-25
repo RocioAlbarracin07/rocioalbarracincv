@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Curriculum Vitae - Rocío</title>
+</head>
+
+<body>
+
+    <main>
+
+        <!-- PORTADA -->
+        <section class="portada">
+
+            <nav>
+                <a href="#YO">YO</a>
+                <a href="#Portafolio">Portafolio</a>
+            </nav>
+
+            <h1 class="titulo">
+                HOLA. // SOY ROCÍO*
+            </h1>
+
+            <p class="subtitulo">
+                TRABAJEMOS JUNTOS \*
+            </p>
+
+        </section>
+
+        <!-- PRESENTACIÓN -->
+        <section class="presentacion" id="YO">
+
+            <div>
+                <h2>Acá vamos..</h2>
+
+                <p>
+                    Bueno, me presento de una manera más seria: me llamo Rocío, soy de San José (Temperley). Fuera del
+                    estudio trato de ser muy activa: me la paso rodando en la bici, jugando al fútbol o
+                    llenando de mimos a mis tres gatos hermosos. Te invito a conocer mi trabajo como diseñadora y
+                    tatuadora, y todo lo que me gusta hacer ♡
+                </p>
+            </div>
+
+        </section>
+
+        <!-- PORTAFOLIO / TRABAJOS -->
+        <section class="trabajos" id="Portafolio">
+
+            <div class="trabajos-header">
+                <h2>/Proyectos destacados</h2>
+                <p>dejame un comentario :)</p>
+            </div>
+
+            <!-- Botones de navegación -->
+            <button class="carrusel-btn prev" id="btn-prev" aria-label="Anterior">&#10094;</button>
+            <button class="carrusel-btn next" id="btn-next" aria-label="Siguiente">&#10095;</button>
+
+            <!-- Carrusel movimiento -->
+            <div class="scroll movimiento" id="carrusel">
+
+                <!-- Proyecto 1 -->
+                <div class="proyecto">
+                    <img src="img/D1.jpg" alt="Proyecto 1" class="imagen">
+
+                    <div class="info">
+                        <h3>PURO MOVIMIENTO</h3>
+                        <p>Trabajo realizado para Espacio Tipografico III.</p>
+
+                        <a href="https://www.behance.net/gallery/223255801/Espacio-Tipografico-III-Festival-PUROMOVIMIENTO"
+                            target="_blank" rel="noopener" class="btn-vermas">Ver más</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="proyecto">
+                    <img src="img/D4.jpg" alt="Proyecto 2" class="imagen">
+
+                    <div class="info">
+                        <h3>BOTANICA PATAGONICA</h3>
+                        <p>Trabajo realizado para Espacio Tipografico II.</p>
+
+                        <a href="https://www.behance.net/gallery/235765505/Espacio-Tipografico-II-Botanica-Patagonica"
+                            target="_blank" rel="noopener" class="btn-vermas">Ver más</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>cátedra winchevsky</p>
+
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/roro.tatt0/" target="_blank" rel="noopener">
+                    <img src="img/instagram.png" alt="Instagram"> instagram
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.facebook.com/roo.soledad.583284" target="_blank" rel="noopener">
+                    <img src="img/facebook.png" alt="Facebook"> facebook
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- SCRIPT PARA QUE FUNCIONEN LAS FLECHAS -->
+    <script>
+        const carrusel = document.getElementById('carrusel');
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+
+        btnNext.addEventListener('click', () => {
+            carrusel.scrollBy({
+                left: carrusel.clientWidth,
+                behavior: 'smooth'
+            });
+        });
+
+        btnPrev.addEventListener('click', () => {
+            carrusel.scrollBy({
+                left: -carrusel.clientWidth,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
