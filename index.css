@@ -14,27 +14,24 @@ main {
     width: 100%;
 }
 
-/* PORTADA */
 
-.portada {
-    position: relative;
+/* HEADER */
+
+header {
     width: 100%;
-    height: 100vh;
-    background-image: url("img/img5.gif");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    padding: 22px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
 }
 
 nav {
-    position: absolute;
-    top: 22px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 14px;
     text-transform: uppercase;
-    z-index: 10;
 }
 
 nav a {
@@ -43,26 +40,40 @@ nav a {
     font-size: 20px;
 }
 
+
+/* PORTADA */
+
+.portada {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("img/img5.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 20px 21vh;
+}
+
 .titulo {
-    position: absolute;
-    left: 1%;
-    bottom: 28%;
     width: 100%;
     color: #fa1302;
     font-size: clamp(100px, 10vw, 300px);
     font-weight: 500;
     line-height: 0.9;
+    letter-spacing: -5px;
     white-space: nowrap;
-    font-family: faustina, sans-serif;}
+    font-family: Faustina, sans-serif;
+}
 
 .subtitulo {
-    position: absolute;
-    left: 20px;
-    bottom: 21%;
     color: #f0e5e4;
     font-size: 40px;
     text-transform: uppercase;
 }
+
 
 /* PRESENTACIÓN */
 
@@ -73,11 +84,13 @@ nav a {
     color: #ffffff;
     padding: 80px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .presentacion h2 {
+    width: 100%;
     font-size: clamp(60px, 8vw, 140px);
     font-weight: 500;
     line-height: 0.9;
@@ -86,59 +99,82 @@ nav a {
 }
 
 .presentacion p {
+    width: 100%;
+    max-width: 800px;
     font-size: clamp(20px, 2vw, 32px);
     line-height: 1.4;
-    max-width: 800px;
 }
+
 
 /* PORTAFOLIO */
 
 .trabajos {
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     background-color: #000000;
     color: #ffffff;
-    position: relative;
-    overflow: hidden;
-}
-
-.trabajos-header {
-    position: absolute;
-    top: 60px;
-    left: 80px;
-    z-index: 10;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .trabajos h2 {
+    width: 100%;
     font-size: clamp(60px, 8vw, 140px);
     font-weight: 500;
     line-height: 0.9;
     letter-spacing: -5px;
     margin-bottom: 10px;
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
 }
 
+.trabajos > p {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* PROYECTO */
 
 .proyecto {
-    flex: 0 0 100%;
     width: 100%;
-    height: 100%;
-    scroll-snap-align: center;
-    position: relative;
     display: flex;
-    align-items: flex-end;
-    padding: 80px;
+    align-items: center;
+    gap: 40px;
 }
 
+
+/* IMAGEN */
+
 .imagen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: 55%;
+    height: auto;
     object-fit: cover;
-    z-index: 1;
 }
+
+
+/* INFORMACIÓN DEL PROYECTO */
+
+.proyecto h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.proyecto p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* BOTÓN */
+
+.btn-vermas {
+    display: inline-block;
+    padding: 12px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+}
+
 
 /* FOOTER */
 
@@ -174,9 +210,16 @@ footer img {
     object-fit: contain;
 }
 
+
 /* CELULAR */
 
 @media (max-width: 700px) {
+
+    /* HEADER */
+
+    header {
+        padding: 15px;
+    }
 
     nav {
         gap: 8px;
@@ -186,37 +229,57 @@ footer img {
         font-size: 14px;
     }
 
+
+    /* PORTADA */
+
+    .portada {
+        min-height: 100vh;
+        padding: 0 15px 26vh;
+    }
+
     .titulo {
         font-size: 23vw;
         letter-spacing: -5px;
-        bottom: 32%;
     }
 
     .subtitulo {
-        left: 15px;
-        bottom: 26%;
         font-size: 13px;
     }
 
-    .trabajos-header {
-        top: 20px;
-        left: 20px;
+
+    /* PRESENTACIÓN */
+
+    .presentacion {
+        padding: 50px 20px;
+    }
+
+
+    /* PORTAFOLIO */
+
+    .trabajos {
+        padding: 50px 20px;
+    }
+
+    .trabajos h2 {
+        letter-spacing: -3px;
     }
 
     .proyecto {
-        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
     }
 
-    .info {
-        max-width: 100%;
-        padding: 20px;
-        margin-bottom: 50px;
+    .imagen {
+        width: 100%;
     }
 
-    .carrusel-btn {
-        font-size: 1.4rem;
-        padding: 8px 12px;
+    .proyecto h3 {
+        font-size: 30px;
     }
+
+
+    /* FOOTER */
 
     footer {
         padding: 20px 0;
