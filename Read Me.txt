@@ -1,0 +1,25 @@
+# rocioalbarracincurriculumvitae
+
+# TP1 - Curriculum Vitae en HTML5 y CSS3
+
+## Descripción del Proyecto
+Este trabajo consiste en el desarrollo de un Curriculum Vitae interactivo y portafolio personal utilizando etiquetas semánticas de HTML5 y un sistema de estilos con CSS3. El objetivo principal fue maquetar la estructura sin estilos en una primera etapa, para luego incorporar diseño visual y organización de elementos mediante Flexbox.
+
+Mi cv tiene:
+- Header con navegación principal.
+- Sección de portada y presentación.
+- Galería de proyectos destacados utilizando la propiedad Flexbox.
+- Formulario.
+- Footer con enlaces a redes sociales e imagotipo institucional.
+
+---
+
+Información del tp
+- Editor de código utilizado:** Visual Studio Code
+- Tamaño de pantalla de trabajo:** 1920 x 1080 px (Desktop) es un smart de 32.
+
+---
+
+## Enlaces
+
+- Repositorio de GitHub:** https://github.com/rocioalbarracin07/rocioalbarracincv

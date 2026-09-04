@@ -3,50 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     min-height: 100vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-x: hidden;
 }
-
 main {
     width: 100%;
 }
 
-
 /* HEADER */
 
 header {
-    width: 100%;
     padding: 22px 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+nav { 
+    font-family: "bebas neue", sans-serif;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    gap: 20px;
 }
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-    text-transform: uppercase;
-}
-
-nav a {
-    color: #ece4e4;
+nav a { 
     text-decoration: none;
+    color: #e8e0c3;
     font-size: 20px;
 }
-
 
 /* PORTADA */
 
 .portada {
     width: 100%;
     min-height: 100vh;
-    background-image: url("img/img5.gif");
+    background-image: url("img/img01.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -56,31 +48,21 @@ nav a {
     align-items: flex-start;
     padding: 0 20px 21vh;
 }
-
-.titulo {
-    width: 100%;
-    color: #fa1302;
-    font-size: clamp(100px, 10vw, 300px);
-    font-weight: 500;
-    line-height: 0.9;
-    letter-spacing: -5px;
-    white-space: nowrap;
-    font-family: Faustina, sans-serif;
+.titulo { /*ESTA GRANDISIMO EL TEXTO, BOY A INTENTAR ARRERGLARLO*/
+    color: #c17605;
+    font-family: "Passion One", sans-serif;
+    font-size: clamp(120px, 7vw, 300px);
 }
-
 .subtitulo {
-    color: #f0e5e4;
-    font-size: 40px;
-    text-transform: uppercase;
+    color: #e8e0c3;
+    font-size: 50px;
+    font-family: "Passion One", sans-serif;
 }
-
 
 /* PRESENTACIÓN */
 
 .presentacion {
-    width: 100%;
-    min-height: 90vh;
-    background-color: #000000;
+    background-color: #a94b4b;
     color: #ffffff;
     padding: 80px;
     display: flex;
@@ -88,93 +70,185 @@ nav a {
     justify-content: center;
     align-items: center;
 }
-
 .presentacion h2 {
     width: 100%;
+    max-width: 1200px;
+    font-family: "bebas neue", sans-serif;
+    font-weight: bold;
     font-size: clamp(60px, 8vw, 140px);
-    font-weight: 500;
     line-height: 0.9;
-    letter-spacing: -5px;
     margin-bottom: 40px;
 }
-
 .presentacion p {
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
+    font-family: "bebas neue", sans-serif;
     font-size: clamp(20px, 2vw, 32px);
     line-height: 1.4;
 }
 
-
-/* PORTAFOLIO */
+/* FRANJAS Y PROYECTOS */ 
 
 .trabajos {
-    width: 100%;
-    min-height: 90vh;
-    background-color: #000000;
-    color: #ffffff;
+    background-size: cover;
+    background-position: center;
     padding: 60px 80px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    min-height: 100vh;
 }
-
 .trabajos h2 {
-    width: 100%;
-    font-size: clamp(60px, 8vw, 140px);
-    font-weight: 500;
-    line-height: 0.9;
-    letter-spacing: -5px;
+    color: #a86a06;
+    font-family: "Passion One", sans-serif;
+    font-size: clamp(30px, 10vw, 100px);
     margin-bottom: 10px;
+    letter-spacing: -1px;
 }
-
-.trabajos > p {
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-/* PROYECTO */
-
 .proyecto {
-    width: 100%;
+    width: 350px;
+    padding: 40px;
     display: flex;
-    align-items: center;
-    gap: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    border-radius: 8px; 
 }
-
-
-/* IMAGEN */
-
-.imagen {
-    width: 55%;
-    height: auto;
-    object-fit: cover;
-}
-
-
-/* INFORMACIÓN DEL PROYECTO */
 
 .proyecto h3 {
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 30px;
+    font-family: "bebas neue", sans-serif;
+    font-weight: bold;
 }
-
 .proyecto p {
-    font-size: 18px;
-    margin-bottom: 25px;
+    font-size: 16px;
+    font-family: "bebas neue", sans-serif;
 }
-
-
-/* BOTÓN */
-
 .btn-vermas {
-    display: inline-block;
-    padding: 12px 25px;
-    color: #ffffff;
+    font-family: "bebas neue", sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: #ffffff;
     text-decoration: none;
-    border: 1px solid #ffffff;
+}
+    border-radius: 4px; /
+
+/* Proyecto 1 */
+.trabajos-puro {
+    background-image: url("img/img03.jpg");
 }
 
+.caja-puro {
+    background-color: rgba(218, 129, 35, 0.5);
+}
+
+/* Proyecto 2 */
+.trabajos-camerun {
+    background-image: url("img/img5.gif");
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caja-camerun {
+    background-color: rgba(66, 35, 218, 0.5);
+}
+
+/* Proyecto 3 */
+.trabajos-patagonica {
+    background-image: url("img/img02.jpg"); 
+}
+.caja-patagonica {
+    background-color: rgba(35, 218, 100, 0.5);
+}
+
+/* SECCIÓN DE CONTACTO */
+.contacto-nuevo {
+    width: 100%;
+    min-height: 80vh;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-family: "bebas neue", sans-serif;
+    justify-content: center;
+    padding: 60px 80px;
+}
+.contacto-contenedor {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contacto-contenedor h2 {
+    color: #a86a06;
+    font-family: "Passion One", sans-serif;
+    font-size: clamp(30px, 8vw, 80px);
+    margin: 0;
+    letter-spacing: -1px;
+}
+.contacto-contenedor p {
+    font-size: 18px;
+    color: #cccccc;
+    margin: 0 0 20px 0;
+}
+
+/* FORMULARIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.campo-grupo label {
+    font-size: 18px;
+    font-family: "bebas neue", sans-serif;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+.campo-grupo input {
+    width: 100%;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid #a86a06;
+    border-radius: 4px; 
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.campo-grupo input:focus {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.campo-grupo input::placeholder {
+    color: #777777;
+}
+
+/* BOTÓN ENVIAR */
+
+.btn-enviar-nuevo {
+    font-family: "bebas neue", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 14px 30px;
+    color: #000000;
+    background-color: #a86a06;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-enviar-nuevo:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
 
 /* FOOTER */
 
@@ -187,15 +261,14 @@ footer {
     align-items: center;
     gap: 30px;
     color: #ffffff;
+    font-family: "bebas neue", sans-serif;
     font-size: 14px;
 }
-
 footer ul {
     display: flex;
     gap: 15px;
     list-style: none;
 }
-
 footer a {
     display: flex;
     align-items: center;
@@ -208,91 +281,4 @@ footer img {
     width: 25px;
     height: 25px;
     object-fit: contain;
-}
-
-
-/* CELULAR */
-
-@media (max-width: 700px) {
-
-    /* HEADER */
-
-    header {
-        padding: 15px;
-    }
-
-    nav {
-        gap: 8px;
-    }
-
-    nav a {
-        font-size: 14px;
-    }
-
-
-    /* PORTADA */
-
-    .portada {
-        min-height: 100vh;
-        padding: 0 15px 26vh;
-    }
-
-    .titulo {
-        font-size: 23vw;
-        letter-spacing: -5px;
-    }
-
-    .subtitulo {
-        font-size: 13px;
-    }
-
-
-    /* PRESENTACIÓN */
-
-    .presentacion {
-        padding: 50px 20px;
-    }
-
-
-    /* PORTAFOLIO */
-
-    .trabajos {
-        padding: 50px 20px;
-    }
-
-    .trabajos h2 {
-        letter-spacing: -3px;
-    }
-
-    .proyecto {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 25px;
-    }
-
-    .imagen {
-        width: 100%;
-    }
-
-    .proyecto h3 {
-        font-size: 30px;
-    }
-
-
-    /* FOOTER */
-
-    footer {
-        padding: 20px 0;
-        gap: 15px;
-        flex-direction: column;
-    }
-
-    footer ul {
-        gap: 15px;
-    }
-
-    footer img {
-        width: 22px;
-        height: 22px;
-    }
 }
