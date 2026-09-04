@@ -48,7 +48,7 @@ nav a {
     align-items: flex-start;
     padding: 0 20px 21vh;
 }
-.titulo { /*ESTA GRANDISIMO EL TEXTO, BOY A INTENTAR ARRERGLARLO*/
+.titulo { /*ESTA GRANDISIMO EL TEXTO, VOY A INTENTAR ARRERGLARLO*/
     color: #c17605;
     font-family: "Passion One", sans-serif;
     font-size: clamp(120px, 7vw, 300px);
@@ -132,7 +132,7 @@ nav a {
     text-decoration: none;
 }
     border-radius: 4px; /
-
+/* lo que busque hacer aca es que cada trabajo se deslice mediante una flecha o eso pensaba, pero no me salio y se me ocurrió hacerlo en fila*/
 /* Proyecto 1 */
 .trabajos-puro {
     background-image: url("img/img03.jpg");
