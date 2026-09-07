@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caacupe+One&family=Faustina:ital,wght@0,300..800;1,300..800&family=Kapakana:wght@300..400&family=Passion+One:wght@400;700;900&family=Tilt+Warp:XROT@-45..45&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="img/favicon.png">
     <title>Curriculum Vitae - Rocío</title>
 </head>
 
@@ -18,7 +19,7 @@
         <nav>
             <a href="#YO">YO</a>
             <a href="#PORTAFOLIO">PORTAFOLIO</a>
-            <a href="#CONTACTO">CONTACTO</a>
+            <a href="#HABILIDADES">HABILIDADES</a>
         </nav>
     </header>
 
@@ -26,25 +27,59 @@
 
         <!-- PORTADA -->
         <section class="portada">
+            <img src="img/img01.jpg" alt="Portada" class="imagen-portada" width="100%" height="100%">
 
-            <h1 class="titulo">
-                Hola. // Soy Rocío*
-            </h1>
-
-            <p class="subtitulo">
-                TRABAJEMOS JUNTOS \*
-            </p>
-
+            <div class="contenido-texto">
+                <h1 class="titulo">Hola. // Soy Rocío*</h1>
+                <p class="subtitulo">TRABAJEMOS JUNTOS *</p>
+            </div>
         </section>
 
         <!-- PRESENTACIÓN -->
         <section class="presentacion" id="YO">
             <h2>Acá vamos..</h2>
-            <p> Bueno, me presento de una manera más seria: me llamo Rocío, soy de San José (Temperley). Fuera del
-                estudio trato de ser muy activa: me la paso rodando en la bici, jugando al fútbol o llenando de
-                mimos a mis tres gatos hermosos. Te invito a conocer mi trabajo como diseñadora y tatuadora, y todo
-                lo que me gusta hacer ♡ </p>
+            <p>
+                ¡Hola! Soy Rocío, diseñadora, y tatuadora de San José (Temperley). Me apasiona la
+                comunicación visual en todas sus formas y busco constantemente aprender y crear nuevos proyectos. Te
+                cuento un poco sobre mi recorrido y lo que me gusta hacer:
+            </p>
+
+            <ul>
+                <li><strong>Estudios y formación:</strong> Estudio la Licenciatura en Diseño y Comunicación Visual en la
+                    UNLa y continúo capacitándome en desarrollo web (HTML, CSS, JS). Actualmente termine mis estudios
+                    sobre Marketing Digital.</li>
+
+                <li><strong>Arte-Tatuaje:</strong> Soy tatuadora y dicto clases de tatuaje en el Centro Argentino
+                    de Oficios (Lomas de Zamora) y en mi propio local, transmitiendo el oficio y las técnicas del área.
+                </li>
+
+                <li><strong>Comunicación digital y trabajo independiente:</strong> Trabajo de forma autónoma en la
+                    gestión de redes sociales, estrategia de contenido y desarrollo visual para marcas y proyectos.</li>
+
+                <li><strong>Experiencia laboral:</strong> Cuento con trayectoria previa en producción audiovisual,
+                    edición de video y atención virtual dentro del ámbito educativo e institucional.</li>
+
+                <li><strong>Fuera de las pantallas:</strong> En mi tiempo libre me encanta salir a andar en bici, jugar
+                    al fútbol y pasar tiempo llenando de mimos a mis tres gatijos.</li>
+            </ul>
         </section>
+
+        <section class="habilidades" id="HABILIDADES">
+            <h2>Habilidades</h2>
+            <p>Un recorrido por los programas y aplicaciones que forman parte de mi kit diario para darle forma a cada
+                proyecto. Desde herramientas profesionales de diseño y desarrollo web hasta aplicaciones móviles para
+                crear contenido ágil y dinámico en redes sociales.</p>
+            <div class="programas">
+                <img src="img/img07.png" height="50px" width="50px" alt="illustrator">
+                <img src="img/img08.png" height="50px" width="50px" alt="photoshop">
+                <img src="img/img09.png" height="50px" width="50px" alt="indesign">
+                <img src="img/img10.png" height="50px" width="50px" alt="after effects">
+                <img src="img/img11.png" height="50px" width="50px" alt="premiere">
+                <img src="img/img12.png" height="50px" width="50px" alt="figma">
+            </div>
+
+        </section>
+
         <!-- PROYECTO 1 -->
         <section class="trabajos trabajos-puro" id="PORTAFOLIO">
             <h2>/Proyectos destacados</h2>
@@ -75,45 +110,22 @@
             </article>
         </section>
     </main>
-
-    <!-- SECCIÓN CONTACTO -->
-    <section class="contacto-nuevo" id="CONTACTO">
-        <div class="contacto-contenedor">
-            <h2>/ Contacto</h2>
-            <p>Dejáme tu mensaje y me pongo en contacto a la brevedad.</p>
-
-            <form class="formulario" action="mailto:rocioalbarraci473@gmail.com" method="POST" enctype="text/plain">
-                <div class="campo-grupo">
-                    <label for="nombre-apellido">/Nombre y apellido</label>
-                    <input type="text" id="nombre-apellido" name="nombre_apellido" placeholder="Tu nombre completo"
-                        required>
-                </div>
-
-                <div class="campo-grupo">
-                    <label for="correo">/Correo electrónico</label>
-                    <input type="email" id="correo" name="correo" placeholder="rocioalbarraci473@gmail.com" required>
-                </div>
-
-                <button type="submit" class="btn-enviar-nuevo">Enviar</button>
-            </form>
-        </div>
-    </section>
-
     <!-- FOOTER -->
     <footer>
         <a href="https://www.instagram.com/wis.unla/reels/" target="_blank" rel="noopener">
-            <img src="img/compu 3 transparente.svg" alt="Cátedra Wischñevsky"> Cátedra Wischñevsky
+            <img src="img/compusvg.svg" height="25px" width="25px" alt="Cátedra Wischñevsky"> Cátedra
+            Wischñevsky
         </a>
 
         <ul>
             <li>
                 <a href="https://www.instagram.com/roro.tatt0/" target="_blank" rel="noopener">
-                    <img src="img/instagram.png" alt="Instagram"> instagram
+                    <img src="img/instagram.png" height="25px" width="25px" alt="Instagram"> instagram
                 </a>
             </li>
             <li>
                 <a href="https://www.facebook.com/roo.soledad.583284" target="_blank" rel="noopener">
-                    <img src="img/facebook.png" alt="Facebook"> facebook
+                    <img src="img/facebook.png" height="25px" width="25px" alt="Facebook"> facebook
                 </a>
             </li>
         </ul>
