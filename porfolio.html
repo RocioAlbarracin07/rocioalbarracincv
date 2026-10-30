@@ -1,80 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio - Rocío</title>
+    <title>Porfolio y Contacto - Rocío</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="img/favicon.png">
 </head>
 
 <body>
-
     <header>
-            <nav>
-                <a href="sobremi.html">SOBRE MI</a>
-                <a href="habilidades.html">HABILIDADES</a>
-                <a href="index.html" class="link-portada">
-                    <img src="img/img-ast01.png" alt="Portada" class="icono-nav">
-                </a>
-                <a href="porfolio.html">PORFOLIO</a>
-                <a href="contacto.html">CONTACTO</a>
-            </nav>
+        <nav>
+            <a href="sobremi.html#sobre-mi">SOBRE MI</a>
+            <a href="sobremi.html#habilidades">HABILIDADES</a>
+            <a href="index.html" class="link-portada">
+                <img src="img/img-ast01.png" alt="Portada" width="22" height="22" class="icono-nav">
+            </a>
+            <a href="#portafolio" class="activo">PORFOLIO</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
     </header>
+
     <main>
         <section class="portafolio" id="portafolio">
             <div class="contenido-portafolio">
                 <div class="caja-intro-portafolio">
-                
-                <div class="titulo-con-icono">
-                    <img src="img/img-ast03.png" alt="Icono" class="icono-titulo">
-                    <h2>Porfolio</h2>
+                    <div class="titulo-con-icono">
+                        <img src="img/img-ast03.png" alt="Icono" width="35" height="35" class="icono-titulo">
+                        <h2>Porfolio</h2>
+                    </div>
+                    <p class="texto-intro">Te doy la bienvenida a mi espacio de proyectos de diseño. Aquí vas a encontrar un recorrido por diferentes disciplinas visuales: desarrollo de marcas, gráficos vectoriales, piezas para prensa y composiciones digitales. Cada trabajo refleja mi búsqueda constante por sintetizar ideas complejas en soluciones gráficas claras, estéticas y funcionales, adaptadas a las necesidades de cada soporte.</p>
                 </div>
-                <p  class="texto-intro">Te doy la bienvenida a mi espacio de proyectos de diseño. Aquí vas a encontrar un recorrido por
-                    diferentes disciplinas visuales: desarrollo de marcas, gráficos vectoriales, piezas para prensa y
-                    composiciones digitales. Cada trabajo refleja mi búsqueda constante por sintetizar ideas complejas
-                    en soluciones gráficas claras, estéticas y funcionales, adaptadas a las necesidades de cada soporte.
-                </p>
-                </div>
-
 
                 <div class="contenedor-carrusel-portafolio">
                     <button class="btn-flecha izq" id="btn-izq">&lt;</button>
 
-                    <div class="tarjeta-proyecto activa">
-                        <img src="img/img02.jpg" alt="Botanica Patagonica" class="img-proyecto">
+                    <article class="tarjeta-proyecto activa">
+                        <img src="img/carrusel-proyecto/img02.jpg" alt="Botanica Patagonica" width="800" height="800" class="img-proyecto">
                         <div class="caja-info-proyecto">
                             <h3>BOTANICA PATAGONICA</h3>
-                            <p>Trabajo realizado para Espacio Tipográfico 02. Realización de diseño editorial; libro.
-                            </p>
-                            <a href="https://www.behance.net/gallery/235765505/Espacio-Tipografico-II-Botanica-Patagonica"
-                                target="_blank" class="boton-ver-mas">Ver Behance</a>
+                            <p>Trabajo realizado para Espacio Tipográfico 02. Realización de diseño editorial; libro.</p>
+                            <a href="https://www.behance.net/gallery/235765505/Espacio-Tipografico-II-Botanica-Patagonica" target="_blank" rel="noopener" class="boton-ver-mas">Ver Behance</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="tarjeta-proyecto">
-                        <img src="img/img03.jpg" alt="Proyecto 2" class="img-proyecto">
+                    <article class="tarjeta-proyecto">
+                        <img src="img/carrusel-proyecto/img03.jpg" alt="Proyecto 2" width="800" height="800" class="img-proyecto">
                         <div class="caja-info-proyecto">
                             <h3>PUROMOVIMIENTO</h3>
-                            <p>Trabajo realizado para Espacio Tipográfico 03. Realización de diseño editorial; folleto.
-                            </p>
-                            <a href="https://www.behance.net/gallery/223255801/Espacio-Tipografico-III-Festival-PUROMOVIMIENTO"
-                                target="_blank" class="boton-ver-mas">Ver Behance</a>
+                            <p>Trabajo realizado para Espacio Tipográfico 03. Realización de diseño editorial; folleto.</p>
+                            <a href="https://www.behance.net/gallery/223255801/Espacio-Tipografico-III-Festival-PUROMOVIMIENTO" target="_blank" rel="noopener" class="boton-ver-mas">Ver Behance</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="tarjeta-proyecto">
-                        <img src="img/img04.jpg" alt="Proyecto 3" class="img-proyecto">
+                    <article class="tarjeta-proyecto">
+                        <img src="img/carrusel-proyecto/img04.jpg" alt="Proyecto 3" width="800" height="800" class="img-proyecto">
                         <div class="caja-info-proyecto">
                             <h3>CENTRO CULTURAL DE CAMERÚN</h3>
                             <p>Trabajo realizado para Taller De Diseño 03. Realización de branding; brandbook.</p>
-                            <a href="https://www.behance.net/gallery/240557893/Centro-cultural-de-Cmaerun"
-                                target="_blank" class="boton-ver-mas">Ver Behance</a>
+                            <a href="https://www.behance.net/gallery/240557893/Centro-cultural-de-Cmaerun" target="_blank" rel="noopener" class="boton-ver-mas">Ver Behance</a>
                         </div>
-                    </div>
+                    </article>
 
                     <button class="btn-flecha der" id="btn-der">&gt;</button>
                 </div>
@@ -84,7 +74,38 @@
                     <span class="punto"></span>
                     <span class="punto"></span>
                 </div>
+            </div>
+        </section>
 
+        <section class="seccion-contacto" id="contacto">
+            <div class="contenido-contacto">
+                <div class="columna-info">
+                    <div class="titulo-con-icono">
+                        <img src="img/img-ast03.png" alt="Asterisco" width="35" height="35" class="icono-titulo">
+                        <h2>Contacto</h2>
+                    </div>
+                    <p class="texto-intro">¿Tenés una idea en mente? Escribime para coordinar un proyecto de diseño o resolver cualquier consulta.</p>
+
+                    <div class="contenedor-video-meme">
+                        <video src="videos/contacto.mp4" width="350" height="240" autoplay loop muted playsinline class="video-meme"></video>
+                    </div>
+                </div>
+
+                <form class="formulario-contacto" action="#" method="POST">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-form" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" class="input-form">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" class="input-form" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" class="textarea-form" rows="6" required></textarea>
+
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
             </div>
         </section>
     </main>
@@ -92,63 +113,63 @@
     <footer>
         <div class="contenedor-footer">
             <a href="https://www.instagram.com/wis.unla/reels/" target="_blank" rel="noopener">
-                <img src="img/compusvg.svg" alt="Cátedra Wischñevsky"> Cátedra Wischñevsky
+                <img src="img/compusvg.svg" alt="Cátedra Wischñevsky" width="25" height="25"> Cátedra Wischñevsky
             </a>
             <a href="https://www.instagram.com/roro.tatt0/" target="_blank" rel="noopener">
-                <img src="img/instagram.svg" alt="Instagram"> instagram
+                <img src="img/instagram.svg" alt="Instagram" width="25" height="25"> instagram
             </a>
             <a href="https://www.facebook.com/roo.soledad.583284" target="_blank" rel="noopener">
-                <img src="img/facebook.svg" alt="Facebook"> facebook
+                <img src="img/facebook.svg" alt="Facebook" width="25" height="25"> facebook
             </a>
             <div class="derechos">
-                <span>Todos los derechos reservados</span>
+                <p>Todos los derechos reservados</p>
             </div>
         </div>
-    </footer><script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const tarjetas = document.querySelectorAll(".tarjeta-proyecto");
-        const puntos = document.querySelectorAll(".punto");
-        const btnIzquierdo = document.getElementById("btn-izq");
-        const btnDerecho = document.getElementById("btn-der");
-        let indiceActual = 0;
+    </footer>
 
-        function actualizarCarrusel(nuevoIndice) {
-            tarjetas[indiceActual].classList.remove("activa");
-            puntos[indiceActual].classList.remove("activo");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tarjetas = document.querySelectorAll(".tarjeta-proyecto");
+            const puntos = document.querySelectorAll(".punto");
+            const btnIzquierdo = document.getElementById("btn-izq");
+            const btnDerecho = document.getElementById("btn-der");
+            let indiceActual = 0;
 
-            indiceActual = nuevoIndice;
+            function actualizarCarrusel(nuevoIndice) {
+                tarjetas[indiceActual].classList.remove("activa");
+                puntos[indiceActual].classList.remove("activo");
 
-            if (indiceActual < 0) {
-                indiceActual = tarjetas.length - 1;
-            } else if (indiceActual >= tarjetas.length) {
-                indiceActual = 0;
+                indiceActual = nuevoIndice;
+
+                if (indiceActual < 0) {
+                    indiceActual = tarjetas.length - 1;
+                } else if (indiceActual >= tarjetas.length) {
+                    indiceActual = 0;
+                }
+
+                tarjetas[indiceActual].classList.add("activa");
+                puntos[indiceActual].classList.add("activo");
             }
 
-            tarjetas[indiceActual].classList.add("activa");
-            puntos[indiceActual].classList.add("activo");
-        }
+            if (btnDerecho) {
+                btnDerecho.addEventListener("click", () => {
+                    actualizarCarrusel(indiceActual + 1);
+                });
+            }
 
-        if (btnDerecho) {
-            btnDerecho.addEventListener("click", () => {
-                actualizarCarrusel(indiceActual + 1);
-            });
-        }
+            if (btnIzquierdo) {
+                btnIzquierdo.addEventListener("click", () => {
+                    actualizarCarrusel(indiceActual - 1);
+                });
+            }
 
-        if (btnIzquierdo) {
-            btnIzquierdo.addEventListener("click", () => {
-                actualizarCarrusel(indiceActual - 1);
-            });
-        }
-
-        puntos.forEach((punto, index) => {
-            punto.addEventListener("click", () => {
-                actualizarCarrusel(index);
+            puntos.forEach((punto, index) => {
+                punto.addEventListener("click", () => {
+                    actualizarCarrusel(index);
+                });
             });
         });
-    });
-</script>
-
+    </script>
 </body>
 
-</html>
-</body>
+</html> 

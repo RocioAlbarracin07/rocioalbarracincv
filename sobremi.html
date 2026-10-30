@@ -9,78 +9,153 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="img/favicon.png">
 </head>
 
 <body>
-
     <header>
         <nav>
-            <nav>
-                <a href="sobremi.html">SOBRE MI</a>
-                <a href="habilidades.html">HABILIDADES</a>
-                <a href="index.html" class="link-portada">
-                    <img src="img/img-ast01.png" alt="Portada" class="icono-nav">
-                </a>
-                <a href="porfolio.html">PORFOLIO</a>
-                <a href="contacto.html">CONTACTO</a>
-            </nav>
+            <a href="#sobre-mi" class="activo">SOBRE MI</a>
+            <a href="#habilidades">HABILIDADES</a>
+            <a href="index.html" class="link-portada">
+                <img src="img/img-ast01.png" alt="Portada" width="22" height="22" class="icono-nav">
+            </a>
+            <a href="porfolio.html#portafolio">PORFOLIO</a>
+            <a href="porfolio.html#contacto">CONTACTO</a>
+        </nav>
     </header>
 
     <main>
-        <section class="sobre-mi">
+        <article class="sobre-mi" id="sobre-mi">
             <div class="contenido-sobre-mi">
                 <div class="titulo-con-icono">
-                    <img src="img/img-ast03.png" alt="*" class="icono-titulo">
+                    <img src="img/img-ast03.png" alt="*" width="35" height="35" class="icono-titulo">
                     <h2>Sobre mi</h2>
                 </div>
 
-                <p>¡Hola! Soy Rocío, diseñadora, y tatuadora de San José (Temperley). Me apasiona la comunicación visual
-                    en todas sus formas y busco constantemente aprender y crear nuevos proyectos. Te cuento un poco
-                    sobre mi recorrido y lo que me gusta hacer:</p>
+                <p>¡Hola! Soy Rocío, diseñadora, y tatuadora de San José (Temperley). Me apasiona la comunicación visual en todas sus formas y busco constantemente aprender y crear nuevos proyectos. Te cuento un poco sobre mi recorrido y lo que me gusta hacer:</p>
 
-                <p>Estudio Diseño y Comunicación Visual en la UNLa y continúo capacitándome en desarrollo web y
-                    Marketing Digital. Soy tatuadora y también dicto clases de tatuaje en el Centro Argentino de Oficios
-                    y en mi propio local. Trabajo de forma autónoma en gestión de redes sociales, creación de contenido
-                    y desarrollo visual, y cuento con experiencia en producción audiovisual, edición de video y atención
-                    virtual. Fuera de las pantallas, me gusta andar en bici, jugar al fútbol y pasar tiempo con mis tres
-                    gatos.</p>
+                <p>Estudio Diseño y Comunicación Visual en la UNLa y continúo capacitándome en desarrollo web y Marketing Digital. Soy tatuadora y también dicto clases de tatuaje en el Centro Argentino de Oficios y en mi propio local. Trabajo de forma autónoma en gestión de redes sociales, creación de contenido y desarrollo visual, y cuento con experiencia en producción audiovisual, edición de video y atención virtual. Fuera de las pantallas, me gusta andar en bici, jugar al fútbol y pasar tiempo con mis tres gatos.</p>
 
                 <a href="archivos/albarracinrocio-cv.pdf" download class="boton-cv">Descargar cv</a>
             </div>
-        </section>
+        </article>
+
         <section class="galeria">
             <div class="carrusel-track">
                 <div class="carrusel-grupo">
-                    <img src="img/img-gordo.jpg" alt="Gato">
-                    <img src="img/img-bici.jpg" alt="Bicicleta">
-                    <img src="img/img-tatu.jpg" alt="Tatuaje">
-                    <img src="img/img-foto.jpg" alt="foto">
-                    <img src="img/img-hema.jpg" alt="Hema">
+                    <img src="img/img-gordo.jpg" alt="Gato" width="220" height="220">
+                    <img src="img/img-bici.jpg" alt="Bicicleta" width="220" height="220">
+                    <img src="img/img-tatu.jpg" alt="Tatuaje" width="220" height="220">
+                    <img src="img/img-foto.jpg" alt="foto" width="220" height="220">
+                    <img src="img/img-hema.jpg" alt="Hema" width="220" height="220">
                 </div>
                 <div class="carrusel-grupo">
-                    <img src="img/img-gordo.jpg" alt="Gato">
-                    <img src="img/img-bici.jpg" alt="Bicicleta">
-                    <img src="img/img-tatu.jpg" alt="Tatuaje">
-                    <img src="img/img-foto.jpg" alt="foto">
-                    <img src="img/img-hema.jpg" alt="Hema">
+                    <img src="img/img-gordo.jpg" alt="Gato" width="220" height="220">
+                    <img src="img/img-bici.jpg" alt="Bicicleta" width="220" height="220">
+                    <img src="img/img-tatu.jpg" alt="Tatuaje" width="220" height="220">
+                    <img src="img/img-foto.jpg" alt="foto" width="220" height="220">
+                    <img src="img/img-hema.jpg" alt="Hema" width="220" height="220">
+                </div>
+            </div>
+        </section>
+
+        <section class="habilidades" id="habilidades">
+            <div class="contenido-habilidades">
+                <div class="titulo-con-icono">
+                    <img src="img/img-ast03.png" alt="*" width="35" height="35" class="icono-titulo">
+                    <h2>Habilidades</h2>
+                </div>
+
+                <p>Un recorrido por los programas y aplicaciones que forman parte de mi kit diario para darle forma a cada proyecto, abarcando desde herramientas profesionales de diseño visual, editorial e ilustración digital hasta entornos de programación web y sistemas de control de versiones, combinados con plataformas clave para la gestión y optimización de contenidos que garantizan un flujo de trabajo integral, ágil y de alta calidad técnica y estética.</p>
+            </div>
+            <div class="grilla-habilidades">
+                <div class="tarjeta-habilidad">
+                    <img src="img/habilidadescar/img-git.jpg" alt="GitHub" width="200" height="315" class="img-fondo-tarjeta">
+                    <div class="icono-software">
+                        <img src="img/git.svg" alt="GitHub Logo" width="50" height="50">
+                    </div>
+                    <div class="caja-texto-habilidad">
+                        <p>"Sumando nuevos conocimientos y constante evolución técnica para potenciar cada proyecto web."</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-habilidad">
+                    <img src="img/habilidadescar/img-visual.jpg" alt="VS Code" width="200" height="315" class="img-fondo-tarjeta">
+                    <div class="icono-software">
+                        <img src="img/visual.svg" alt="VS Code Logo" width="50" height="50">
+                    </div>
+                    <div class="caja-texto-habilidad">
+                        <p>"Sumando práctica frecuente en Visual Studio Code para potenciar el desarrollo y la maquetación web."</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-habilidad">
+                    <img src="img/habilidadescar/img-ilus.jpg" alt="Illustrator" width="200" height="315" class="img-fondo-tarjeta">
+                    <div class="icono-software">
+                        <img src="img/ilus.svg" alt="Illustrator Logo" width="50" height="50">
+                    </div>
+                    <div class="caja-texto-habilidad">
+                        <p>"Dominio de Adobe Illustrator para el desarrollo de vectores, identidades visuales y piezas gráficas."</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-habilidad">
+                    <img src="img/habilidadescar/img-afftter.jpg" alt="After Effects" width="200" height="315" class="img-fondo-tarjeta">
+                    <div class="icono-software">
+                        <img src="img/ae.svg" alt="After Effects Logo" width="50" height="50">
+                    </div>
+                    <div class="caja-texto-habilidad">
+                        <p>"Explorando Adobe After Effects para sumar animación básica a mis proyectos."</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-habilidad">
+                    <img src="img/habilidadescar/img-ps.jpg" alt="Photoshop" width="200" height="315" class="img-fondo-tarjeta">
+                    <div class="icono-software">
+                        <img src="img/ps.svg" alt="Photoshop Logo" width="50" height="50">
+                    </div>
+                    <div class="caja-texto-habilidad">
+                        <p>"Dominio de Adobe Photoshop para retoque digital, composición y tratamiento de imagen."</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-habilidad">
+                    <img src="img/habilidadescar/img-lr.jpg" alt="Lightroom" width="200" height="315" class="img-fondo-tarjeta">
+                    <div class="icono-software">
+                        <img src="img/lr.svg" alt="Lightroom Logo" width="50" height="50">
+                    </div>
+                    <div class="caja-texto-habilidad">
+                        <p>"Uso de Adobe Lightroom para el ajuste de tonos, contraste y retoque cromático de imágenes."</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-habilidad">
+                    <img src="img/habilidadescar/img-id.jpg" alt="InDesign" width="200" height="315" class="img-fondo-tarjeta">
+                    <div class="icono-software">
+                        <img src="img/indesin.svg" alt="InDesign Logo" width="50" height="50">
+                    </div>
+                    <div class="caja-texto-habilidad">
+                        <p>"Dominio de Adobe InDesign para maquetación editorial, diseño de publicaciones y preprensa."</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    
-    <footer>
+
+   <footer>
         <div class="contenedor-footer">
             <a href="https://www.instagram.com/wis.unla/reels/" target="_blank" rel="noopener">
-                <img src="img/compusvg.svg" alt="Cátedra Wischñevsky"> Cátedra Wischñevsky
+                <img src="img/compusvg.svg" alt="Cátedra Wischñevsky" width="25" height="25"> Cátedra Wischñevsky
             </a>
             <a href="https://www.instagram.com/roro.tatt0/" target="_blank" rel="noopener">
-                <img src="img/instagram.svg" alt="Instagram"> instagram
+                <img src="img/instagram.svg" alt="Instagram" width="25" height="25"> instagram
             </a>
             <a href="https://www.facebook.com/roo.soledad.583284" target="_blank" rel="noopener">
-                <img src="img/facebook.svg" alt="Facebook"> facebook
+                <img src="img/facebook.svg" alt="Facebook" width="25" height="25"> facebook
             </a>
             <div class="derechos">
-                <span>Todos los derechos reservados</span>
+                <p>Todos los derechos reservados</p>
             </div>
         </div>
     </footer>
